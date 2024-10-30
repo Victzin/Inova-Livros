@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>InovaLivros</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Seções</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Tecnologia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Ciência</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Arte e Cultura</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Empreendedorismo</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da InovaLivros" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/Compras.svg" alt="Carrinho de compras" class="container__imagem"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Perfil do usuário" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Pronto para explorar novas ideias?</h2>
+    <p class="banner__texto">Encontre livros inspiradores para transformar sua mente!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será seu próximo aprendizado?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novidades na Estante</h2>
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="img/Ciencia.svg" alt="Livro sobre ciência moderna"></div>
+        <div class="swiper-slide"><img src="img/Tecnologia.svg" alt="Livro sobre tecnologias emergentes"></div>
+        <div class="swiper-slide"><img src="img/Design.svg" alt="Livro sobre design e criatividade"></div>
+      </div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <section class="card">
+    <div class="card__descrição">
+      <div class="descrição">
+        <h3 class="descrição__titulo">Indicação da Semana</h3>
+        <h2 class="descrição__titulo-livro">Inovação Sustentável</h2>
+        <p class="descrição__texto">
+          Descubra práticas sustentáveis para o futuro da tecnologia.
+        </p>
+      </div>
+      <img src="img/Inovacao.svg" class="descrição__imagem" alt="Livro sobre inovação sustentável" />
+    </div>
+    <div class="card__botões">
+      <ul class="botões">
+        <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar livro" /></li>
+        <li class="botões__item"><img src="img/Compras.svg" alt="Adicionar no carrinho de compras" /></li>
+      </ul>
+      <a href="#" class="botões__ancora">Saiba mais</a>
+    </div>
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">Tópicos Recentemente Visitados</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Inovação</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Educação</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Biotecnologia</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Tecnologia</a></li>
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Desenvolvimento Pessoal</a></li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Quer saber mais?</h2>
+    <p class="contato__texto">Assine nossa newsletter para novidades e lançamentos!</p>
+    <input type="email" placeholder="Insira seu e-mail" class="contato__email" />
+  </section>
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">InovaLivros</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>
