@@ -1,13 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodape.css");
 
-/* Variáveis de cores */
 :root {
-    --cor-de-fundo: #F3F4F6;
+    --cor-de-fundo: #EBECEE;
     --branco: #FFFFFF;
-    --verde: #009688;
-    --azul-degrade: linear-gradient(97.54deg, #003c5a 35.49%, #007fae 165.37%);
+    --laranja: #EB9B00;
+    --azul-degrade: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
     --fonte-principal: "Poppins", sans-serif;
-    --azul: #003c5a;
+    --azul: #002F52;
+    --fonte-secundaria: "Josefin Sans", sans-serif;
+    --preto: #000000;
+    --cinza: #474646;
+    --cinza-claro: #858585;
 }
 
 body {
@@ -15,209 +23,5 @@ body {
     font-family: var(--fonte-principal);
     font-size: 16px;
     font-weight: 400;
-    color: var(--azul);
-}
-
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-}
-
-/* Cabeçalho */
-.cabeçalho {
-    background: var(--azul-degrade);
-    color: var(--branco);
-    padding: 15px 0;
-}
-
-.lista-menu {
-    display: flex;
-    gap: 15px;
-}
-
-.lista-menu__titulo {
-    font-weight: 500;
-}
-
-.lista-menu__link {
-    text-decoration: none;
-    color: var(--branco);
-}
-
-.container__imagem {
-    width: 25px;
-    cursor: pointer;
-}
-
-/* Banner */
-.banner {
-    text-align: center;
-    padding: 50px 20px;
-    background-color: var(--verde);
-    color: var(--branco);
-}
-
-.banner__titulo {
-    font-size: 2rem;
-    font-weight: 700;
-}
-
-.banner__texto {
-    margin-top: 10px;
-    font-size: 1.2rem;
-}
-
-.banner__pesquisa {
-    margin-top: 20px;
-    padding: 10px;
-    width: 70%;
-    max-width: 400px;
-    border: none;
-    border-radius: 5px;
-}
-
-/* Carrossel */
-.carrossel {
-    padding: 20px;
-    background-color: var(--branco);
-}
-
-.carrossel__titulo {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: var(--azul);
-}
-
-/* Card */
-.card {
-    margin: 30px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--branco);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.card__descrição {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    align-items: center;
-}
-
-.descrição__titulo {
-    font-size: 1.2rem;
-    font-weight: 600;
-}
-
-.descrição__titulo-livro {
-    font-size: 1.5rem;
-    color: var(--verde);
-    font-weight: 700;
-}
-
-.descrição__texto {
-    margin-top: 10px;
-    color: var(--azul);
-}
-
-.descrição__imagem {
-    width: 120px;
-    height: auto;
-}
-
-/* Botões */
-.card__botões {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.botões__item img {
-    width: 24px;
-    cursor: pointer;
-}
-
-.botões__ancora {
-    text-decoration: none;
-    color: var(--branco);
-    background-color: var(--verde);
-    padding: 10px 20px;
-    border-radius: 5px;
-}
-
-/* Tópicos */
-.tópicos {
-    padding: 20px;
-}
-
-.tópicos__titulo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--azul);
-    text-align: center;
-}
-
-.tópicos__lista {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.tópicos__item {
-    background-color: var(--azul);
-    border-radius: 5px;
-    padding: 8px 15px;
-}
-
-.tópicos__link {
-    color: var(--branco);
-    text-decoration: none;
-}
-
-/* Contato */
-.contato {
-    text-align: center;
-    padding: 40px 20px;
-    background-color: var(--verde);
-    color: var(--branco);
-}
-
-.contato__titulo {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.contato__texto {
-    margin: 10px 0 20px;
-    font-size: 1.1rem;
-}
-
-.contato__email {
-    padding: 10px;
-    width: 70%;
-    max-width: 300px;
-    border: none;
-    border-radius: 5px;
-}
-
-/* Rodapé */
-.rodapé {
-    background-color: var(--azul);
-    color: var(--branco);
-    padding: 20px 0;
-    text-align: center;
-}
-
-.rodapé__titulo {
-    font-size: 1.2rem;
-    font-weight: 500;
+    color: var(--preto);
 }
